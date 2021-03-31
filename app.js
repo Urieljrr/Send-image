@@ -1,4 +1,4 @@
-var nodemailer = require('nodemailer');
+const nodemailer = require('nodemailer');
 const express = require('express')
 const bodyParser = require('body-parser');
 const fs = require('fs')
@@ -8,12 +8,12 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'))
 app.use(bodyParser.json())
 
-var to;
-var subject;
-var body;
-var path
+let to;
+let subject;
+let body;
+let path
 
-var Storage = multer.diskStorage({
+const Storage = multer.diskStorage({
     destination: function(req, file, callback) {
         callback(null, "./images");
     },
@@ -22,7 +22,7 @@ var Storage = multer.diskStorage({
     }
 });
 
-var upload = multer({
+const upload = multer({
     storage: Storage
 }).single("image"); //Field name and max count
 
@@ -45,7 +45,7 @@ app.post('/sendemail',(req,res) => {
             console.log(body)
             console.log(req.file)
             console.log(req.files)
-            var transporter = nodemailer.createTransport({
+            const transporter = nodemailer.createTransport({
                 service: 'gmail',
                 auth: {
                   user: '',
@@ -53,7 +53,7 @@ app.post('/sendemail',(req,res) => {
                 }
               });
               
-              var mailOptions = {
+              const mailOptions = {
                 from: '',
                 to: to,
                 subject:subject,
@@ -85,5 +85,5 @@ app.post('/sendemail',(req,res) => {
 })
 
 app.listen(5000,() => {
-    console.log("App started on Port 5000")
+    console.log("GREATE RUN SERVER!!!!!")
 })
