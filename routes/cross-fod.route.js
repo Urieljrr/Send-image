@@ -37,15 +37,35 @@ router.post('/sendemail',(req,res) => {
             console.log(err)
             return res.end("Something went wrong!");
         }else{
-            to = req.body.to
-            subject = req.body.subject
-            body = req.body.subject
+            
             path = req.file.path
-            console.log(to)
-            console.log(subject)
-            console.log(body)
-            console.log(req.file)
-            console.log(req.files)
+        
+            const { 
+                nombre,
+                apellido,
+                edad,
+                telefono,
+                email, 
+                categoria, 
+                leciones, 
+                estado, 
+                descripcion 
+                } = req.body;
+
+            contentHtml = `
+            <h1>Nuevo Registro</h1>
+            <small>Registro de Convocatoria</small>
+            <ul>
+            <li>${nombre} ${apellido}</li>
+            <li>${edad}</li>
+            <li>${telefono}</li>
+            <li>${email}</li>
+            <li>${categoria}</li>
+            <li>${leciones}</li>
+            <li>${estado}</li>
+            <li>${descripcion}</li>
+            </ul>`;
+
            //CONEXION DEL SERVER
             const transporter = nodemailer.createTransport({
                 host:'indsoftk.tech',
@@ -59,9 +79,9 @@ router.post('/sendemail',(req,res) => {
               
               const mailOptions = {
                 from: '',
-                to: to,
-                subject:subject,
-                text:body,
+                to: 'mac@indsoftk.tech',
+                subject:'Nuevo Registro',
+                html:contentHtml,
                 attachments: [
                   {
                    path: path
