@@ -78,7 +78,7 @@ router.post('/sendemail',(req,res) => {
               });
               
               const mailOptions = {
-                from: '',
+                from: `${email}`,
                 to: 'mac@indsoftk.tech',
                 subject:'Nuevo Registro',
                 html:contentHtml,
