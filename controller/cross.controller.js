@@ -1,17 +1,10 @@
-const { Router } = require('express');
+const { response } = require("express");
 const nodemailer = require('nodemailer');
 const multer = require('multer');
 const fs = require('fs');
-const router = Router();
 
 
 
-
-
-
-let to;
-let subject;
-let body;
 let path
 
 const Storage = multer.diskStorage({
@@ -25,45 +18,44 @@ const Storage = multer.diskStorage({
 
 const upload = multer({
     storage: Storage
-}).single("image"); //Field name and max count
+}).single("image");
 
-router.get('/',(req,res) => {
-    res.sendFile(__dirname + '/index.html')
-})
-
-router.post('/sendemail',(req,res) => {
+const sendData = (req, res = response) => {
+    
     upload(req,res,function(err){
         if(err){
             console.log(err)
             return res.end("Something went wrong!");
         }else{
-            
+        
             path = req.file.path
         
             const { 
-                nombre,
-                apellido,
-                edad,
-                telefono,
-                email, 
-                categoria, 
-                leciones, 
-                estado, 
-                descripcion 
+                name,
+                last,
+                age,
+                phone,
+                email,
+                category,
+                injuries,
+                state,
+                description,
+                acept
                 } = req.body;
 
             contentHtml = `
             <h1>Nuevo Registro</h1>
             <small>Registro de Convocatoria</small>
             <ul>
-            <li>${nombre} ${apellido}</li>
-            <li>${edad}</li>
-            <li>${telefono}</li>
+            <li>${name} ${last}</li>
+            <li>${age}</li>
+            <li>${phone}</li>
             <li>${email}</li>
-            <li>${categoria}</li>
-            <li>${leciones}</li>
-            <li>${estado}</li>
-            <li>${descripcion}</li>
+            <li>${category}</li>
+            <li>${injuries}</li>
+            <li>${state}</li>
+            <li>${description}</li>
+            <li>${acept}</li>
             </ul>`;
 
            //CONEXION DEL SERVER
@@ -88,7 +80,7 @@ router.post('/sendemail',(req,res) => {
                   }
                ]
               };
-              
+              //TRASPORTER
               transporter.sendMail(mailOptions, function(error, info){
                 if (error) {
                   console.log(error);
@@ -99,14 +91,20 @@ router.post('/sendemail',(req,res) => {
                         return res.end(err)
                     }else{
                         console.log("deleted")
-                        return res.redirect('/result.html')
+                        return res.json({
+                            ok:true,
+                            message:'Email sent successfully!!!'
+                        })
                     }
                   })
                 }
               });
+              //END TRASPORTER
         }
-    })
-});
+    });
+}
 
 
-module.exports = router;
+module.exports = {
+    sendData
+}
