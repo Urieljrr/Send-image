@@ -92,10 +92,11 @@ const sendData = (req, res = response) => {
                         return res.end(err)
                     }else{
                         console.log("deleted")
-                        return res.json({
-                            ok:true,
-                            message:'Email sent successfully!!!'
-                        })
+                        // return res.json({
+                        //     ok:true,
+                        //     message:'Email sent successfully!!!'
+                        // })
+                        return res.redirect('/send.html');
                     }
                   })
                 }

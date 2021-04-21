@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav-var ">
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="">
+                <img src="assets/img/logo.svg" alt="" width="140" height="140" class="rounded mx-auto d-block">
+            </a>
+            </div>
+        </nav>
+      </div>
+      <div class="col-12 offset-lg-2 col-lg-8">
+        <div class="part text-center py-4">
+            <h2>Registro de convocatoria</h2>
+        </div>
+        <form  action="/api/cross-send" method="POST" enctype="multipart/form-data">
+        <div class="container br-2 rounded shadow px-0">
+            <div class="col-lg-12 h-pri py-4 px-0">
+                <div class="col-lg-12 px-4 text-white text-center">
+                    <h3>Registrar todos los datos que se le solicitan y realice el pago</h3>
+                </div>
+            </div>
+            <div class="row mx-0">
+                <div class="col-lg-12 py-3 px-4">
+                    <img class="img1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDI4Ni4wNTQgMjg2LjA1NCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGc+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8cGF0aCBzdHlsZT0iIiBkPSJNMTQzLjAyNywwQzY0LjAzMSwwLDAsNjQuMDQsMCwxNDMuMDI3YzAsNzguOTk2LDY0LjAzMSwxNDMuMDI3LDE0My4wMjcsMTQzLjAyNyAgIHMxNDMuMDI3LTY0LjAzMSwxNDMuMDI3LTE0My4wMjdDMjg2LjA1NCw2NC4wNCwyMjIuMDIyLDAsMTQzLjAyNywweiBNMTQzLjAyNywyNTkuMjM2Yy02NC4xODMsMC0xMTYuMjA5LTUyLjAyNi0xMTYuMjA5LTExNi4yMDkgICBTNzguODQ0LDI2LjgxOCwxNDMuMDI3LDI2LjgxOHMxMTYuMjA5LDUyLjAyNiwxMTYuMjA5LDExNi4yMDlTMjA3LjIxLDI1OS4yMzYsMTQzLjAyNywyNTkuMjM2eiIgZmlsbD0iI2ZmODAwNCIgZGF0YS1vcmlnaW5hbD0iIzIzOTRiYyIgY2xhc3M9IiI+PC9wYXRoPgoJPHBhdGggc3R5bGU9IiIgZD0iTTE1MC4wMjYsODAuMzloLTIyLjg0Yy02LjkxLDAtMTAuOTMzLDcuMDQ0LTEwLjkzMywxMy4xNThjMCw1LjkzNiwzLjIwOSwxMy4xNTgsMTAuOTMzLDEzLjE1OCAgIGg3LjI1OXY4NS4zNmMwLDguNzM0LDYuMjU3LDEzLjYwNSwxMy4xNzYsMTMuNjA1czEzLjE4NS00Ljg4MSwxMy4xODUtMTMuNjA1VjkyLjc3MUMxNjAuNzk4LDg1Ljc4OSwxNTYuOTQ1LDgwLjM5LDE1MC4wMjYsODAuMzl6IiBmaWxsPSIjZmY4MDA0IiBkYXRhLW9yaWdpbmFsPSIjMjM5NGJjIiBjbGFzcz0iIj48L3BhdGg+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPC9nPjwvc3ZnPg==" />
+                    <h4 class="mb-0">Tu informacion personal</h4>
+                </div>
+                    <div class="row mx-0">
+                        <div class="col-12 col-lg-6 pt-3">
+                            <label class="form-label" for="name">Nombre</label>
+                            <input
+                              type="text"
+                              name="name"
+                              class="form-control form-color">
+                        </div>
+                        <div class="col-12 col-lg-4 pt-3">
+                            <label class="form-label" for="surname">Apellidos</label>
+                            <input
+                              type="text"
+                              name="last"
+                              class="form-control form-color">
+                        </div>
+                        <div class="col-12 col-lg-2 pt-3">
+                            <label class="form-label" for="age">Edad</label>
+                            <input
+                               type="text"
+                               name="age"
+                               class="form-control form-color">
+                        </div>
+                        <div class="col-12 col-lg-6 pt-3">
+                            <label class="form-label" for="phone">Telefono</label>
+                            <input
+                                type="text"
+                                name="phone"
+                                class="form-control form-color">
+                        </div>
+                            <div class="col-12 col-lg-6 pt-3">
+                            <label class="form-label" for="email">Correo Electronico</label>
+                            <input
+                                 type="text"
+                                 name="email"
+                                 class="form-control form-color">
+                        </div>
+                       <div class="col-lg-12">
+                        <div class="col-lg-12 line py-3"></div>
+                       </div>
+                    </div>
+            </div>
+            <div class="row mx-0">
+                <div class="col-lg-12 py-3 px-4">
+                    <img class="img2" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDI4Ni4wNTQgMjg2LjA1NCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGc+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8cGF0aCBzdHlsZT0iIiBkPSJNMTQzLjAyNywwQzY0LjAzMSwwLDAsNjQuMDQsMCwxNDMuMDI3YzAsNzguOTk2LDY0LjAzMSwxNDMuMDI3LDE0My4wMjcsMTQzLjAyNyAgIHMxNDMuMDI3LTY0LjAzMSwxNDMuMDI3LTE0My4wMjdDMjg2LjA1NCw2NC4wNCwyMjIuMDIyLDAsMTQzLjAyNywweiBNMTQzLjAyNywyNTkuMjM2Yy02NC4xODMsMC0xMTYuMjA5LTUyLjAyNi0xMTYuMjA5LTExNi4yMDkgICBTNzguODQ0LDI2LjgxOCwxNDMuMDI3LDI2LjgxOHMxMTYuMjA5LDUyLjAyNiwxMTYuMjA5LDExNi4yMDlTMjA3LjIxLDI1OS4yMzYsMTQzLjAyNywyNTkuMjM2eiBNMTczLjIzMiwxODAuMjA1aC0zMi4wMzggICBjMTUuNjYxLTE4LjQ1OSw0MC44NTItMzkuNzUzLDQwLjg1Mi02My43MzZjMC0yMS45MS0xNi41NjQtMzUuODgyLTM5LjIxNi0zNS44ODJjLTIyLjY2MSwwLTQzLjg0NywxNy45NzctNDMuODQ3LDM5LjcxNyAgIGMwLDYuNzMxLDQuNjA0LDEyLjU4NiwxMy40NDUsMTIuNTg2YzE3LjY5MSwwLDguMTA4LTI4LjQ5OCwyOS4yOTQtMjguNDk4YzcuNTU0LDAsMTMuMjY2LDYuMjA0LDEzLjI2NiwxMy4yODQgICBjMCw2LjIwNC0zLjEzOCwxMS41NTgtNi40NTQsMTYuMDQ2Yy0xMy45OTksMTguOTY5LTMwLjU4MSwzNC40OTYtNDUuODY3LDUxLjU3OWMtMS44NDEsMi4wNjUtNC4yNDYsNS4xNzYtNC4yNDYsOC43OTYgICBjMCw3LjkzOCw2LjI2NiwxMS4zOCwxNC4zNjUsMTEuMzhoNjEuNTI4YzYuOTk5LDAsMTMuMjY2LTQuNTY4LDEzLjI2Ni0xMi40OTdDMTg3LjU4LDE4NS4wNSwxODEuMzMxLDE4MC4yMDUsMTczLjIzMiwxODAuMjA1eiIgZmlsbD0iI2ZmODAwNCIgZGF0YS1vcmlnaW5hbD0iIzIzOTRiYyI+PC9wYXRoPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjwvZz48L3N2Zz4=" />
+                    <h4>Tu informacion de Salud</h4>
+                </div>
+                    <div class="row mx-0">
+                        <div class="col-12 col-lg-12">
+                            <label class="form-label">Selecciona categoria a participar</label>
+                            <select
+                                name="category"
+                                class="form-control form-color">
+                                <option>Principiante</option>
+                                <option>Medio</option>
+                                <option>Avanzado</option>
+                                <option>Experto</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-lg-6 pt-3">
+                            <label class="form-label" for="injuries">Lesiones</label>
+                            <input
+                                 type="text"
+                                 name="injuries"
+                                 class="form-control form-color">
+                        </div>
+                        <div class="col-12 col-lg-6 pt-3">
+                            <label class="form-label" for="state">Estado en el que habita actualmente</label>
+                            <input
+                                type="text"
+                                name="state"
+                                class="form-control form-color">
+                        </div>
+                        <div class="col-12 col-lg-12 pt-3">
+                            <label class="form-label" for="textarea">Por que medio conocio el CROSS-FOD</label>
+                            <textarea
+                                type="text"
+                                name="description"
+                                class="form-control form-color"
+                                rows="5"></textarea>
+                        </div>
+                        <div class="col-12 col-lg-6 pt-3">
+                          <label class="form-label" for="injuries">Sube una captura de tu recibo de pago</label>
+                          <input
+                               type="file"
+                               name="image"
+                               class="form-control form-color">
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="col-lg-12 line py-3"></div>
+                    </div>
+            </div>
+            <div class="row mx-0">
+                <!-- <div class="col-lg-12 py-3 px-4">
+                    <img class="img3" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDI4Ni4wNTQgMjg2LjA1NCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGc+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8cGF0aCBzdHlsZT0iIiBkPSJNMTQzLjAyNywwQzY0LjA0LDAsMCw2NC4wNCwwLDE0My4wMjdjMCw3OC45OTYsNjQuMDQsMTQzLjAyNywxNDMuMDI3LDE0My4wMjcgICBzMTQzLjAyNy02NC4wMzEsMTQzLjAyNy0xNDMuMDI3QzI4Ni4wNTQsNjQuMDQsMjIyLjAxNCwwLDE0My4wMjcsMHogTTE0My4wMjcsMjU5LjIzNmMtNjQuMTgzLDAtMTE2LjIwOS01Mi4wMjYtMTE2LjIwOS0xMTYuMjA5ICAgUzc4Ljg0NCwyNi44MTgsMTQzLjAyNywyNi44MThzMTE2LjIwOSw1Mi4wMjYsMTE2LjIwOSwxMTYuMjA5UzIwNy4yMSwyNTkuMjM2LDE0My4wMjcsMjU5LjIzNnogTTE2Ny43MTcsMTM3LjYzNyAgIGM4Ljk2Ni01LjkzNiwxMy4zNjQtMTUuMjc3LDEzLjM2NC0yNS45NzdjMC0xMy4yMzktMTEuMjU0LTMxLjA4Mi0zNC43MjktMzEuMDgyYy0xOC4wOTMsMC0zNS41NDIsMTQuMjc2LTM1LjU0MiwyNy41MTUgICBjMCw2LjI4NCwzLjkxNSwxMi41NiwxMC42MDIsMTIuNTZjMTEuMDg1LDAsOC45NjYtMTYuNjM2LDI0LjQ0OS0xNi42MzZjNy4zMzksMCwxMS43MzcsNC45MjUsMTEuNzM3LDExLjM3MSAgIGMwLDE4Ljg1My0yMy4xNTIsNi43OTQtMjMuMTUyLDI0LjYyN2MwLDIwLjAzMywyNy43MiwyLjU0OCwyNy43MiwyNi4zMTdjMCw5LjAwMi02Ljg1NiwxNS43OTYtMTUuMzMxLDE1Ljc5NiAgIGMtMTguNDI0LDAtMTUuODEzLTE5Ljg3Mi0yNi44OTgtMTkuODcyYy01Ljg3MywwLTEyLjU1MSw0Ljc1Ni0xMi41NTEsMTEuMzhjMCwxMy40MTgsMTUsMzEuOTIyLDM5LjEyNywzMS45MjIgICBjMjMuMTUyLDAsNDEuMDg0LTE3LjE1NCw0MS4wODQtMzcuNTI3QzE4Ny41OTgsMTU0LjYyMSwxNzkuNDQ1LDE0My4yNSwxNjcuNzE3LDEzNy42Mzd6IiBmaWxsPSIjZmY4MDA0IiBkYXRhLW9yaWdpbmFsPSIjMjM5NGJjIj48L3BhdGg+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPC9nPjwvc3ZnPg==" />
+                    <h4>Terminos y condiciones del concurso</h4>
+                </div> -->
+                <!-- <div class="row mx-0">
+                    <div class="col-lg-12">
+                        <div class="col-lg-12 px-5 py-5 term">
+                            <div class="col-lg-12 text-center pb-3">
+                             <h3>Terminos y Condiciones</h3>
+                            </div>
+                            <p>
+                             Lorem Ipsum is simply dummy text of the printing and typesetting
+                             industry. Lorem Ipsum has been the industry's standard dummy text
+                             ever since the 1500s, when an unknown printer took a galley of type
+                             and scrambled it to make a type specimen book. It has survived not
+                             only five centuries, but also the leap into electronic typesetting,
+                             remaining essentially unchanged. It was popularised in the 1960s with
+                             the release of Letraset sheets containing Lorem Ipsum passages, and more
+                             recently with desktop publishing software like Aldus PageMaker including
+                             versions of Lorem Ipsum.<br><br>
+      
+                             Why do we use it?
+                             It is a long established fact that a reader will be distracted by t
+                             he readable content of a page when looking at its layout. The point
+                             of using Lorem Ipsum is that it has a more-or-less normal distribution
+                             of letters, as opposed to using 'Content here, content here', making it
+                             look like readable English. Many desktop publishing packages and web page
+                             editors now use Lorem Ipsum as their default model text, and a search for '
+                             lorem ipsum' will uncover many web sites still in their infancy. Various
+                             versions have evolved over the years, sometimes by accident, sometimes on
+                             purpose (injected humour and the like).<br><br>
+      
+      
+                             Where does it come from?
+                             Contrary to popular belief, Lorem Ipsum is not simply random text. It
+                             has roots in a piece of classical Latin literature from 45 BC, making it
+                             over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney
+                             College in Virginia, looked up one of the more obscure Latin words, consectetur,
+                             from a Lorem Ipsum passage, and going through the cites of the word in classical
+                             literature, discovered the undoubtable source. Lorem Ipsum comes from sections
+                             1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil)
+                              by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very
+                              popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor
+                              sit amet..", comes from a line in section 1.10.32.<br><br>
+      
+                             The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
+                             Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced
+                             in their exact original form, accompanied by English versions from the 1914 translation by H.
+                             Rackham.
+                            </p>
+                         </div>
+                         <div class="col-lg-12 pt-3">
+                             <label>
+                                 <input
+                                 name="acept"
+                                 [value]="true"
+                                 type="checkbox"
+                                   class="form-check-input"> Aceptar los Terminos y Condiciones
+                             </label>
+                         </div>
+                         <div class="col-lg-12">
+                            <div class="col-lg-12 line py-3"></div>
+                         </div>
+                    </div>
+                </div> -->
+                <div class="row mx-0">
+                    <div class="col-lg-12">
+                        <div class="col-12 col-lg-12">
+                            <div class="text-center py-4">
+                               <button type="submit" class="btn btn-orange" >Registrarse</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-0">
+                    <div class="col-lg-12">
+                        <div class="col-lg-12 text-center">
+                            <small>Términos y condiciones de uso del Sitio</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </form>
+      </div>
+      
+      
+      
+      <footer class="bg-dark text-white py-1">
+       <div class="container2">
+           <nav class="row mx-0">
+               <ul class="text-center ">
+      
+                       <a href="#" class="text-reset px-2"><i class="fab fa-facebook"></i></a>
+                       <a href="#" class="text-reset px-2"><i class="fab fa-twitter"></i></a>
+                       <a href="#" class="text-reset px-2"><i class="fab fa-youtube"></i></a>
+                       <a href="#" class="text-reset px-2"><i class="fab fa-instagram"></i></a>
+                       <a href="#" class="text-reset px-2"><i class="fab fa-tumblr"></i></a>
+                       <a href="#" class="text-reset px-2"><i class="fab fa-whatsapp"></i></a>
+      
+               </ul>
+      
+            <label class="form-label text-center small" for="footer">INDSOFTK 2021©</label>
+            <img src="assets/img/logoby.svg" alt="" width="40" height="40" class="rounded mx-auto d-block">
+      
+      
+           </nav>
+       </div>
+      </footer>
+      
+</body>
+</html>
+
+
+<style>
+    body{
+  background-color: #F2F2F0;
+  padding: 0;
+  margin: 0;
+}
+.container{
+  background:white;
+}
+.container-fluid{
+  width: 220px;
+}
+
+.row{
+  margin: 30px;
+}
+
+.form-label{
+  color: #FF8004;
+}
+
+.bg-light{
+  background-color:#000000!important;
+}
+
+img,h4{
+  display:inline-block;
+}
+
+.img1,.img2,.img3,.img4{
+  width: 40px;
+}
+
+.form-color{
+  background-color: #E4E8EA!important;
+  padding:15px 20px!important;
+
+}
+
+.line{
+  border-bottom: 1px solid #E4E8EA;
+}
+
+.bg-dark{
+  background-color: black!important;
+  margin: 20px 0px;
+  margin-block-end: auto;
+}
+
+img.rounded{
+  width: 200px;
+}
+
+.term{
+  background-color: #E4E8EA!important;
+  max-height: 250px;
+  overflow: scroll;
+  color: #808B96;
+}
+
+.h-pri{
+background-color: #14173E;
+}
+.btn-orange{
+  background-color: #FF8004;
+}
+
+</style>
