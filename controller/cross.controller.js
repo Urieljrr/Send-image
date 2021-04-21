@@ -1,6 +1,8 @@
 const { response } = require("express");
+
 const nodemailer = require('nodemailer');
 const multer = require('multer');
+
 const fs = require('fs');
 
 
@@ -39,8 +41,7 @@ const sendData = (req, res = response) => {
                 category,
                 injuries,
                 state,
-                description,
-                acept
+                description
                 } = req.body;
 
             contentHtml = `
@@ -55,7 +56,7 @@ const sendData = (req, res = response) => {
             <li>${injuries}</li>
             <li>${state}</li>
             <li>${description}</li>
-            <li>${acept}</li>
+            
             </ul>`;
 
            //CONEXION DEL SERVER
