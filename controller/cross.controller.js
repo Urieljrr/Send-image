@@ -47,17 +47,36 @@ const sendData = (req, res = response) => {
             contentHtml = `
             <h1>Nuevo Registro</h1>
             <small>Registro de Convocatoria</small>
-            <ul>
-            <li>${name} ${last}</li>
-            <li>${age}</li>
-            <li>${phone}</li>
-            <li>${email}</li>
-            <li>${category}</li>
-            <li>${injuries}</li>
-            <li>${state}</li>
-            <li>${description}</li>
-            
-            </ul>`;
+            <table style="width:100%">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Edad</th>
+                    <th>Telefono</th>
+                    <th>Email</th>
+                    <th>Categoria</th>
+                    <th>Leciones</th>
+                    <th>Estado de residencia</th>
+                </tr>
+                <tr>
+                    <td>${name}</td>
+                    <td>${last}</td>
+                    <td>${age}</td>
+                    <td>${phone}</td>
+                    <td>${email}</td>
+                    <td>${category}</td>
+                    <td>${injuries}</td>
+                    <td>${state}</td>
+                </tr>
+            </table>
+            <table style="width:100%">
+                <tr>
+                    <th>Descripcion</th>
+                </tr>
+                <tr>
+                    <td>${description}</td>
+                </tr>
+            </table>`
 
            //CONEXION DEL SERVER
             const transporter = nodemailer.createTransport({
@@ -72,7 +91,9 @@ const sendData = (req, res = response) => {
               
               const mailOptions = {
                 from: `${email}`,
-                to: 'mac@indsoftk.tech',
+                //to: 'abidaluz15@gmail.con',
+                to: 'themacmacka@gmail.con',
+                cc: 'mac@indsoftk.tech',
                 subject:'Nuevo Registro',
                 html:contentHtml,
                 attachments: [
